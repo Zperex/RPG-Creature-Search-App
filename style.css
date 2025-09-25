@@ -1,0 +1,194 @@
+/* CSS reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+}
+
+/* Google font */
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Poppins:wght@400;600&display=swap");
+
+/* Project styling */
+body {
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #1b1b32, #3a1f68);
+  color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+h1 {
+  color: #f5f6f7;
+  font-size: 1.8em;
+  text-align: center;
+  font-family: "Press Start 2P", cursive;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.container {
+  width: 350px;
+  margin: 15px 0;
+  background-color: #ffffffdd;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+/* Search form */
+#search-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 15px;
+  background: #2a2a4a;
+  border-radius: 20px 20px 0 0;
+}
+
+label {
+  color: #f5f6f7;
+  font-size: 0.9rem;
+}
+
+#search-input {
+  flex: 1;
+  height: 40px;
+  padding-left: 10px;
+  border: 2px solid #7f21ab;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+#search-button {
+  padding: 10px 16px;
+  border-radius: 10px;
+  background-color: #7f21ab;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#search-button:hover {
+  background-color: #9c36d3;
+  transform: translateY(-2px);
+}
+
+/* Output */
+.output {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.top-container {
+  background-color: #f0f1f7;
+  border-radius: 12px;
+  padding: 15px;
+}
+
+.name-and-id {
+  font-size: 1.2em;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+#creature-name,
+#special-name {
+  font-weight: 600;
+}
+
+.size,
+#special-description {
+  font-size: 0.85rem;
+  color: #444;
+}
+
+#types {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.type {
+  padding: 6px 10px;
+  font-size: 0.75rem;
+  text-align: center;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+
+/* Stats Table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #7f21ab;
+  color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+th, td {
+  text-align: center;
+  padding: 10px;
+}
+
+tr:not(:last-child) {
+  border-bottom: 2px solid #f5f6f7;
+}
+
+th {
+  font-weight: bold;
+  background-color: #661a91;
+}
+
+/* Creature types (kept same colors, but with glow) */
+.type.normal { background-color: #b7b7aa; }
+.type.fire { background-color: #ff6f52; }
+.type.water { background-color: #42a1ff; }
+.type.electric { background-color: #fecc33; }
+.type.grass { background-color: #78cc55; }
+.type.ice { background-color: #66ccfe; }
+.type.fighting { background-color: #d3887e; }
+.type.poison { background-color: #c68bb7; }
+.type.ground { background-color: #dfba52; }
+.type.flying { background-color: #8899ff; }
+.type.psychic { background-color: #ff66a3; }
+.type.bug { background-color: #aabb23; }
+.type.rock { background-color: #baaa66; }
+.type.ghost { background-color: #9995d0; }
+.type.dragon { background-color: #9e93f1; }
+.type.dark { background-color: #b59682; }
+.type.steel { background-color: #abaabb; }
+.type.fairy { background-color: #ed99ed; }
+
+@media screen and (min-width: 550px) {
+  .container { width: 480px; }
+}
